@@ -13,6 +13,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MultiRepo"
 include ':app'
-include ':libraries:commonui'
-include ':libraries:stockmodule'
-include ':libraries:xytrade'
