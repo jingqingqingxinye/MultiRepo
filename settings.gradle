@@ -1,0 +1,18 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+        repositories {
+            flatDir {
+                dirs 'commonui/libs'
+            }
+        }
+    }
+}
+rootProject.name = "MultiRepo"
+include ':app'
+include ':libraries:commonui'
+include ':libraries:stockmodule'
+include ':libraries:xytrade'
